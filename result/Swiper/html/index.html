@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="../assets/scripts/jquery-1.12.4.min.js"></script>
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-wrapper {
+      height: 400px;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fraction {
+      position: absolute;
+      bottom: 45px;
+      left: 310px;
+      z-index: 999;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-progressbar{
+      width: 150px;
+      position:absolute;
+      bottom: 50px;
+      top: auto;
+      left : 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="wrapper">
+    <div class="swiper-container slider-main">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2>Slider Text One</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Slider Text Two</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Slider Text Three</h2>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <span class="fraction"></span>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    $(document).ready(function () {
+
+      var mainslider = new Swiper('.slider-main', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'progressbar',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      var counter = $('.fraction');
+      var total = $('.swiper-slide').length;
+      var currentCount = $('<span class="count">1' + '/' + total + '</span>');
+      counter.append(currentCount);
+
+      mainslider.on('transitionStart', function () {
+        var index = this.activeIndex + 1;
+        var prevCount = $('.count');
+        currentCount = $('<span class="count next">' + index + '/' + total + '</span>');
+        counter.append(currentCount);
+        counter.html(currentCount);
+      });
+
+    });
+  </script>
+</body>
+
+</html>

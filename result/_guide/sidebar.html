@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=700">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title>VP</title>
+<link rel="stylesheet" href="guide.css" type="text/css">
+<script src="../forshop/assets/scripts/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./common.js"></script>
+</head>
+<body>
+<h1><span>HTML : 포샵 웹뷰</span></h1>
+<dl>
+
+  <dt class="page"><span>[메인]</span></dt>
+  <dd>
+    <ul> 
+
+      <li>
+        <a class="dep_01 title">Component</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">팝업창</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/common_popup.html">팝업/Alert</a></li>
+              <li><a href="../forshop/html/temporary_stop.html">메인 팝업</a></li>              
+            </ul>
+          </li>
+        </ul>
+      </li> 
+      <li>
+        <a class="dep_01 title">01 메뉴별 > 메인</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">홈</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/home.html">홈</a></li> 
+              <li><a href="../forshop/html/home_premium.html">홈(프리미엄회원)</a></li>                                      
+            </ul>
+          </li>
+          <li>
+            <a class="subtitle">검색</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/search_result.html">검색 결과</a></li>
+            </ul>
+          </li>            
+          <li>
+            <a class="subtitle">카테고리</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/category_bak.html">카테고리</a></li>              
+              <!--li><a href="../forshop/html/category.html">카테고리(To-be)</a></li-->
+            </ul>
+          </li>          
+          <li>
+            <a class="subtitle">포인트조회</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/point_0agreement.html">약관 동의 (pc팝업)</a></li> 
+              <!--li><a href="../forshop/html/point_1agree.html">1) 약관동의</a></li>
+              <li><a href="../forshop/html/point_2cert.html">2) 휴대폰 본인인증</a></li-->
+              <li><a href="../forshop/html/point_3pay_view.html">포인트 조회</a></li>                            
+            </ul>
+          </li>
+          <li>
+            <a class="subtitle">하단</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/guide_agreement1.html">이용약관</a></li>
+              <li><a href="../forshop/html/guide_agreement2.html">개인정보처리방침</a></li>
+              <li><a href="../forshop/html/guide_cooperation.html">제휴문의</a></li>
+            </ul>
+          </li>          
+        </ul>
+      </li>
+           
+      <li>
+        <a class="dep_01 title">01 메뉴별 > 카테고리 > 기프트샵</a>
+        <ul class="dep_01_list">            
+          <!--li>
+            <a class="subtitle">기프트샵 (As-Is)</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mobile_coupon.html">(2depth) 브랜드별</a></li>
+              <li><a href="../forshop/html/mobile_coupon_brand.html">(3depth) 브랜드 상품리스트</a></li>
+              <li><a href="../forshop/html/mobile_coupon_brand_detail.html">(4depth) 브랜드 상품리스트</a></li>
+            </ul>
+          </li-->
+          <li>
+            <a class="subtitle">기프트샵 (To-Be)</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/gift_coupon.html">(2depth) 브랜드별</a></li>
+              <li><a href="../forshop/html/gift_coupon_list.html">(3depth) 상품리스트 (바둑판형)</a></li>
+              <li><a href="../forshop/html/gift_coupon_list_row.html">(3depth) 상품리스트 (목록형)</a></li>
+            </ul>
+          </li>           
+        </ul>
+      </li>
+
+      <!--li>
+        <a class="dep_01 title">01 메뉴별 > 카테고리 > 레저/여행</a>
+        <ul class="dep_01_list">         
+          <li>
+            <a class="subtitle">레져/여행</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/travel.html">레져/여행</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li-->  
+
+      <li>
+        <a class="dep_01 title">01 메뉴별 > 카테고리 > 배송스토어</a>
+        <ul class="dep_01_list">         
+          <li>
+            <a class="subtitle">배송스토어</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/delivery2.html">배송스토어</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li> 
+
+      <li>
+        <a class="dep_01 title">01 메뉴별 > 카테고리 > 펫샵</a>
+        <ul class="dep_01_list">         
+          <li>
+            <a class="subtitle">강아지</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/petshop_dog.html">강아지</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="subtitle">고양이</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/petshop_cat.html">고양이</a></li>
+            </ul>
+          </li>          
+        </ul>
+      </li>  
+      
+      <li>
+        <a class="dep_01 title">01 메뉴별 > 카테고리 > 이벤트/핫딜</a>
+        <ul class="dep_01_list">     
+          <li>
+            <a class="subtitle">이벤트</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/event.html">진행중인 이벤트 목록</a></li>
+              <li><a href="../forshop/html/event_end.html">종료된 이벤트 목록</a></li>
+              <li><a href="../forshop/html/event_detail.html">이벤트 상세</a></li>
+            </ul>
+          </li>                        
+          <li>
+            <a class="subtitle">핫딜</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/hotdeal.html">핫딜</a></li>
+            </ul>
+          </li>           
+        </ul>
+      </li>       
+
+      <li>
+        <a class="dep_01 title">02 메뉴별 > 상품 상세</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">모바일쿠폰</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/product_detail_discount.html">일반할인가</a></li>
+              <li><a href="../forshop/html/product_detail_benefit.html">혜택가</a></li>
+              <li><a href="../forshop/html/product_detail_normal.html">정가</a></li>
+            </ul>
+          </li>  
+          <!--li>
+            <a class="subtitle">레저/여행</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/product_detail_travel_discount.html">일반할인가</a></li>
+              <li><a href="../forshop/html/product_detail_travel_premium.html">프리미엄회원가</a></li> 
+            </ul>
+          </li-->           
+          <li>
+            <a class="subtitle">배송스토어</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/product_detail_delivery.html">일반할인가</a></li>
+              <li><a href="../forshop/html/product_detail_premium.html">프리미엄회원가</a></li> 
+              <li><a href="../forshop/html/product_detail_event.html">이벤트특가</a></li>               
+            </ul>
+          </li>  
+          <li>
+            <a class="subtitle">펫샵</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/product_detail_petshop.html">일반할인가</a></li>
+              <li><a href="../forshop/html/product_detail_petshop_premium.html">프리미엄회원가</a></li>  
+            </ul>
+          </li>                                             
+        </ul>
+      </li> 
+
+      <li>
+        <a class="dep_01 title">02 메뉴별 > 상품 상세 > 장바구니</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">장바구니</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/cart_petshop.html">펫샵</a></li>
+            </ul>
+          </li>                                              
+        </ul>
+      </li>       
+      
+      <li>
+        <a class="dep_01 title">02 상품구매 > 구매하기/선물하기/구매완료</a>
+        <ul class="dep_01_list"> 
+          <!--li>
+            <a class="subtitle">(As-Is) 이전화면</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/order.html">구매하기(As-Is)</a></li>
+              <li><a href="../forshop/html/order_complate.html">구매완료(As-Is)</a></li>
+            </ul>
+          </li-->          
+          <li>
+            <a class="subtitle">(To-Be) 모바일쿠폰</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/order_1mc.html">구매하기</a></li>
+              <li><a href="../forshop/html/order_use_coupon.html">사용가능 쿠폰 선택(PC팝업)</a></li>
+              <li><a href="../forshop/html/order_1mc_complete.html">구매완료</a></li>
+              <li><a href="../forshop/html/order_gift_1mc.html">선물하기</a></li>  
+              <li><a href="../forshop/html/order_gift_1mc_complete.html">결제 및 선물전송 완료</a></li>
+            </ul>
+          </li>
+          <!--li>
+            <a class="subtitle">(To-Be) 레저/여행</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/order_2ls.html">구매하기</a></li>
+              <li><a href="../forshop/html/order_2ls_complete.html">구매완료</a></li>
+              <li><a href="../forshop/html/order_gift_2ls.html">선물하기</a></li>
+              <li><a href="../forshop/html/order_gift_2ls_complete.html">결제 및 선물전송 완료</a></li>
+            </ul>
+          </li-->   
+          <li>
+            <a class="subtitle">(To-Be) 배송상품</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/order_3di.html">구매하기</a></li>
+              <li><a href="../forshop/html/order_3di_complete.html">구매완료</a></li>
+              <li><a href="../forshop/html/order_gift_3di.html">선물하기</a></li>
+              <li><a href="../forshop/html/order_gift_3di_complete.html">결제 및 선물전송 완료</a></li>
+            </ul>
+          </li>           
+          <li>
+            <a class="subtitle">(To-Be) 펫샵</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/order_4ps.html">구매하기</a></li>              
+              <!--li><a href="../forshop/html/order_petshop.html">펫샵 구매하기</a></li-->
+              <li><a href="../forshop/html/order_4ps_complete.html">구매완료</a></li>
+              <li><a href="../forshop/html/order_gift_4ps.html">선물하기</a></li>
+              <li><a href="../forshop/html/order_gift_4ps_complete.html">결제 및 선물전송 완료</a></li>
+              <!--li><a href="../forshop/html/order_petshop_final.html">펫샵 구매완료</a></li-->
+            </ul>
+          </li>                      
+        </ul>
+      </li>    
+
+      <li>
+        <a class="dep_01 title">03 회원가입</a>
+        <ul class="dep_01_list">         
+          <li>
+            <ul class="inner">
+              <li><a href="../forshop/html/join00.html">14세 미만 가입방지</a></li>
+              <li><a href="../forshop/html/join01.html">본인인증</a></li>
+              <li><a href="../forshop/html/join02.html">약관동의</a></li>
+              <li><a href="../forshop/html/join03.html">아이디/비번설정</a></li>
+              <li><a href="../forshop/html/join04.html">가입완료</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li> 
+
+      <li>
+        <a class="dep_01 title">03 로그인</a>
+        <ul class="dep_01_list">
+          <li>
+            <ul class="inner">
+              <li><a href="../forshop/html/login.html">로그인</a></li>
+              <li><a href="../forshop/html/push_sms.html">최초 로그인 휴대폰인증</a></li>
+              <li><a href="../forshop/html/login_password_modi.html">비밀번호 변경안내(6개월마다)</a></li>
+              <li><a href="../forshop/html/find_id_cert.html">아이디 찾기-본인인증</a></li>
+              <li><a href="../forshop/html/find_id.html">아이디 찾기</a></li>
+              <li><a href="../forshop/html/reset_pw_cert.html">비밀번호 재설정-본인인증</a></li>
+              <li><a href="../forshop/html/reset_pw.html">비밀번호 재설정</a></li>            
+            </ul>
+          </li>         
+          <!--li>
+            <a class="subtitle">외부 로그인 방식</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/autopw_login.html">오토패스워드 로그인</a></li>
+              <li><a href="../forshop/html/autopw_setting.html">마이페이지 > 앱 설정</a></li>
+              <li><a href="../forshop/html/autopw_guide.html">오토패스워드 본인확인코드</a></li>
+            </ul>
+          </li-->          
+        </ul>
+      </li>       
+      
+      <li>
+        <a class="dep_01 title">04 마이페이지</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">마이페이지</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage.html">마이페이지</a></li>
+              <!--li><a href="../forshop/html/my_couponlist.html">My 쿠폰함</a></li-->
+              <li><a href="../forshop/html/my_couponlist01.html">My 쿠폰함</a></li>                      
+            </ul>
+          </li>
+          <li>
+            <a class="subtitle">공통</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage_cs_info.html">포인트 기프트샵이란?</a></li>
+              <li><a href="../forshop/html/mypage_cs_howto.html">이용방법</a></li>
+              <li><a href="../forshop/html/mypage_cs_notice.html">공지사항</a></li>
+              <li><a href="../forshop/html/mypage_cs_faq.html">FAQ</a></li>
+              <li><a href="../forshop/html/mypage_recommend_id.html">추천인 내역 확인</a></li>              
+            </ul>
+          </li>         
+        </ul>
+      </li>      
+      <li>
+        <a class="dep_01 title">04 > 마이페이지(프리미엄회원)</a>
+        <ul class="dep_01_list">                        
+          <li>
+            <a class="subtitle">프리미엄회원 전용</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage_premium.html">마이페이지(프리미엄회원)</a></li>
+              <li><a href="../forshop/html/mypage_premium_detail.html">프리미엄회원 안내</a></li>               
+              <li><a href="../forshop/html/care_prdlist.html">가입상품 목록</a></li>
+              <li><a href="../forshop/html/care_couponlist.html">쿠폰함</a></li>
+              <li><a href="../forshop/html/care_magazine_list.html">e-매거진</a></li>              
+              <!--li><a href="../forshop/html/care_magazine.html">e-매거진(bak)</a></li-->
+              <li><a href="../forshop/html/care_magazineview.html">e-매거진 뷰어</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>          
+      <li>
+        <a class="dep_01 title">04 마이페이지 > 내정보변경/배송지관리</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">내정보변경</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage_modify.html">회원정보수정</a></li>
+              <li><a href="../forshop/html/mypage_info_modi.html">정보변경</a></li>
+              <li><a href="../forshop/html/mypage_adress-list.html">배송지관리</a></li>  
+              <li><a href="../forshop/html/mypage_adress-edit.html">배송지수정(개별)</a></li>   
+              <li><a href="../forshop/html/mypage_password_modi.html">비밀번호변경</a></li>
+              <li><a href="../forshop/html/mypage_member_exit.html">회원탈퇴</a></li>             
+            </ul>
+          </li>
+        </ul>
+      </li>       
+      <li class="on"> 
+        <a class="dep_01 title">04 마이페이지 > 구매내역</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">모바일쿠폰 구매내역</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage_buying_list.html">구매내역</a></li>
+              <li><a href="../forshop/html/mypage_buying_list_detail.html">구매내역 상세</a></li>
+              <li><a href="../forshop/html/mypage_buying_coupon_image.html">쿠폰 이미지다운페이지</a></li>
+            </ul>
+          </li>
+          <!--li>
+            <a class="subtitle">모바일쿠폰/레저 구매내역 (As-Is)</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage_buying_list.html">구매내역</a></li>
+              <li><a href="../forshop/html/mypage_buying_list_detail.html">구매내역 상세</a></li>
+              <li><a href="../forshop/html/mypage_buying_list_detail_nopin.html">구매내역 상세(핀정보 없음)</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="subtitle">모바일쿠폰/레저 구매내역 (To-Be)</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/couponBuyList_nolist.html">모바일쿠폰 구매내역 (없음)</a></li>
+              <li><a href="../forshop/html/couponBuyList_itemlist.html">모바일쿠폰 구매내역</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy1.html">모바일쿠폰 구매내역상세 (1매/사용가능)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy1_used.html">모바일쿠폰 구매내역상세 (1매/사용완료)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy1_overdue.html">모바일쿠폰 구매내역상세 (1매/기간만료)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy1_refund.html">모바일쿠폰 구매내역상세 (1매/취소환불)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy2.html">모바일쿠폰 구매내역상세 (2매/사용가능)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy2_used1.html">모바일쿠폰 구매내역상세 (2매/1매사용완료)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy2_used2.html">모바일쿠폰 구매내역상세 (2매/모두사용완료)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy2_overdue.html">모바일쿠폰 구매내역상세 (2매/기간만료)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy2_refund.html">모바일쿠폰 구매내역상세 (2매/취소환불)</a></li>
+              <li><a href="../forshop/html/couponBuyList_buy_leisure.html">레저쿠폰 구매내역상세 (결제완료/PIN없음)</a></li>
+            </ul>
+          </li-->          
+        </ul>
+      </li>  
+    
+      <li>
+        <a class="dep_01 title">04 마이페이지 > 배송조회</a>
+        <ul class="dep_01_list">
+          <!--li>
+            <a class="subtitle">배송조회 (As-Is)</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage_delivery.html">배송조회 (마이페이지)</a></li>
+              <li><a href="../forshop/html/delivery_search.html">배송조회 (찾기)</a></li>
+              <li><a href="../forshop/html/delivery_list.html">배송조회 (리스트)</a></li>
+              <li><a href="../forshop/html/delivery_list2.html">배송조회 (내역없음)</a></li>              
+            </ul>
+          </li--> 
+          <li>
+            <a class="subtitle">배송조회 (To-Be)</a>
+            <ul class="inner">
+              <!--li><a href="../forshop/html/deliveryList_nolist.html">배송상품 구매내역 (없음)</a></li-->    
+              <li><a href="../forshop/html/deliveryList_itemlist.html">배송상품 구매내역</a></li> 
+              <li><a href="../forshop/html/deliveryList_order_details1.html">배송상품 구매내역상세(거래 건)</a></li>     
+              <li><a href="../forshop/html/deliveryList_order_details2.html">배송상품 구매내역상세(취소 건)</a></li>              
+              <li><a href="../forshop/html/deliveryList_order_tracking.html">배송 조회 상세(위치)</a></li>
+            </ul>
+          </li>                             
+        </ul>
+      </li>       
+      
+      <li>
+        <a class="dep_01 title">04 마이페이지 > 찜한상품</a>
+        <ul class="dep_01_list">   
+          <li>
+            <a class="subtitle">찜한상품</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/mypage_mylist.html">찜한상품</a></li>
+              <li><a href="../forshop/html/mypage_mylist_none.html">찜한상품(상품없음)</a></li>
+            </ul>
+          </li>                  
+        </ul>
+      </li> 
+      
+      <li>
+        <a class="dep_01 title">서비스 약관</a>
+        <ul class="dep_01_list">
+          <li>
+            <a class="subtitle">공통</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/terms/terms_use.html">이용약관</a></li>
+              <li><a href="../forshop/html/terms/terms_privacy.html">개인정보처리방침 (200826)</a></li>             
+            </ul>
+          </li>
+          <li>
+            <a class="subtitle">가입</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/terms/terms_use.html">서비스 이용약관</a></li>
+              <li><a href="../forshop/html/terms/terms_privacy_accept.html">개인정보 수집 및 이용 동의 (200608)</a></li> 
+              <li><a href="../forshop/html/terms/terms_marketing.html">마케팅 활용 동의 약관</a></li>                           
+            </ul>
+          </li> 
+          <li>
+            <a class="subtitle">포인트 조회</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/terms/pointpg_terms1.html">전자금융거래 이용 동의</a></li>
+              <li><a href="../forshop/html/terms/pointpg_terms2.html">개인정보 수집 및 이용 동의</a></li> 
+              <li><a href="../forshop/html/terms/pointpg_terms3.html">개인정보 제3자 제공 및 위탁 동의</a></li>
+            </ul>
+          </li>                    
+          <li>
+            <a class="subtitle">상품 구매</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/terms/terms_pay_notice.html">구매 주의사항 (200608)</a></li>
+              <li><a href="../forshop/html/terms/terms_third_accept.html">개인정보 제3자 제공 동의 (200608)</a></li> 
+              <li><a href="../forshop/html/terms/terms_privacy_accept.html">개인정보 수집 및 이용 동의 (200608)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li> 
+      
+      <li>
+        <a class="dep_01 title">이메일</a>
+        <ul class="dep_01_list">
+          <li>
+            <ul class="inner">
+              <li><a href="../forshop/html/email_info_use.html">개인정보 수집 및 이용내역 안내</a></li>
+              <li><a href="../forshop/html/email_no_use_id_over.html">장기 미이용 계정 전환 안내</a></li>
+              <li><a href="../forshop/html/email_ad_agree.html">쇼핑몰마케팅정보 제공 수신 동의</a></li>
+              <li><a href="../forshop/html/email_change_service.html">약관개정안내</a></li>
+              <li><a href="../forshop/html/change_terms.html">약관개정(기존,변경이용약관)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li> 
+      
+      <li>
+        <a class="dep_01 title">프로모션</a>
+        <ul class="dep_01_list">
+          <li>
+            <ul class="inner">
+              <li><a href="../forshop/html/all-event-care.html">케어서비스 적용</a></li>
+              <li><a href="../forshop/html/all-event-carebn.html">케어용 배너 전체</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="subtitle">앱 설치/연결 랜딩</a>
+            <ul class="inner">
+              <li><a href="../forshop/html/landing_care_ad.html">쇼핑케어 연결 랜딩광고</a></li> 
+              <li><a href="../forshop/html/app_install.html">앱 설치</a></li>              
+              <!--li><a href="../forshop/html/popup_ad.html">앱 전면광고</a></li-->
+              <!--li><a href="../forshop/html/landing_ad.html">웹 랜딩광고</a></li-->             
+            </ul>
+          </li>          
+        </ul>
+      </li>       
+    </ul>
+  </dd>
+
+</dl>
+
+</body>
+</html>
