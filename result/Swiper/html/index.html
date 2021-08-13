@@ -69,12 +69,12 @@
       z-index: 999;
     }
 
-    .swiper-container-horizontal>.swiper-pagination-progressbar{
+    .swiper-container-horizontal>.swiper-pagination-progressbar {
       width: 150px;
-      position:absolute;
+      position: absolute;
       bottom: 50px;
       top: auto;
-      left : 120px;
+      left: 120px;
     }
   </style>
 </head>
@@ -98,6 +98,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
       <span class="fraction"></span>
+      <span class="playControll">정지</span>
     </div>
   </div>
 
@@ -107,29 +108,37 @@
   <!-- Initialize Swiper -->
   <script>
     $(document).ready(function () {
+      $(function () {
+        var mainslider = new Swiper('.slider-main', {
+          autoplay: true,
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
 
-      var mainslider = new Swiper('.slider-main', {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'progressbar',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-
-      var counter = $('.fraction');
-      var total = $('.swiper-slide').length;
-      var currentCount = $('<span class="count">1' + '/' + total + '</span>');
-      counter.append(currentCount);
-
-      mainslider.on('transitionStart', function () {
-        var index = this.activeIndex + 1;
-        var prevCount = $('.count');
-        currentCount = $('<span class="count next">' + index + '/' + total + '</span>');
+        var counter = $('.fraction');
+        var total = $('.swiper-slide').length;
+        var currentCount = $('<span class="count">1' + '/' + total + '</span>');
         counter.append(currentCount);
-        counter.html(currentCount);
+
+        mainslider.on('transitionStart', function () {
+          var index = this.activeIndex + 1;
+          var prevCount = $('.count');
+          currentCount = $('<span class="count next">' + index + '/' + total + '</span>');
+          counter.append(currentCount);
+          counter.html(currentCount);
+        });
+        //auto play
+        $(".playControll").click(function () {
+          mainslider.autoplay.stop();
+          $(this).addClass('stop');
+          console.log("stop");
+        });
       });
 
     });
